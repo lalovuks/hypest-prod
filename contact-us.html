@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact Us - Hypest Botswana | Your Health Our Priority</title>
+    <meta name="description" content="Get in touch with Hypest Botswana. Contact us via phone, WhatsApp, or email for premium healthcare solutions and services.">
+    <meta name="keywords" content="contact Hypest, healthcare Botswana, health services contact, medical consultation Botswana">
+    <meta name="author" content="Hypest Botswana">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hypest.co.bw/contact">
+    
+    <meta property="og:title" content="Contact Us - Hypest Botswana">
+    <meta property="og:description" content="Reach out to Hypest Botswana for premium healthcare solutions.">
+    <meta property="og:url" content="https://hypest.co.bw/contact">
+    <meta property="og:type" content="website">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+            min-height: 100vh;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        /* Animated background */
+        body::before {
+            content: '';
+            position: fixed;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 50%);
+            animation: rotate 10s linear infinite;
+            z-index: 0;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Glassmorphic Navigation */
+        nav {
+            position: sticky;
+            top: 20px;
+            margin: 20px 0 40px;
+            background: rgba(0, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 10px 40px;
+            box-shadow: 0 8px 32px rgba(0, 255, 255, 0.15);
+            z-index: 1000;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            z-index: 1001;
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo-img {
+            height: 55px;
+            width: auto;
+            display: block;
+            object-fit: contain;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            transition: all 0.4s ease-in-out;
+        }
+        
+        .nav-links a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #00ffff, #ff8c00);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #ff8c00;
+            text-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hamburger Styles */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background: #00ffff;
+            border-radius: 3px;
+            transition: 0.3s ease;
+        }
+
+        /* Hamburger Animation */
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin: 80px 0;
+            padding: 60px;
+            background: rgba(0, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            min-height: 600px;
+        }
+        
+        .contact-content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        
+        .contact-content h1 {
+            font-size: 56px;
+            background: linear-gradient(135deg, #00ffff, #ff8c00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            list-style: none;
+        }
+        
+        .contact-info li {
+            font-size: 18px;
+            color: #d0d0d0;
+            margin-bottom: 20px;
+            padding-left: 30px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .contact-info li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #ff8c00;
+            font-size: 24px;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .contact-btn {
+            padding: 20px 35px;
+            background: rgba(0, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(0, 255, 255, 0.3);
+            border-radius: 15px;
+            color: #00ffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
+            cursor: pointer;
+        }
+        
+        .contact-btn:hover {
+            background: rgba(0, 255, 255, 0.2);
+            border-color: #00ffff;
+            transform: translateX(10px);
+            box-shadow: 0 8px 25px rgba(0, 255, 255, 0.4);
+        }
+        
+        .contact-btn.whatsapp {
+            border-color: rgba(37, 211, 102, 0.5);
+            color: #25d366;
+        }
+        
+        .contact-btn.whatsapp:hover {
+            background: rgba(37, 211, 102, 0.2);
+            border-color: #25d366;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+        
+        .contact-btn.email {
+            border-color: rgba(255, 140, 0, 0.5);
+            color: #ff8c00;
+        }
+        
+        .contact-btn.email:hover {
+            background: rgba(255, 140, 0, 0.2);
+            border-color: #ff8c00;
+            box-shadow: 0 8px 25px rgba(255, 140, 0, 0.4);
+        }
+        
+        .btn-icon { font-size: 24px; }
+        
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            border-radius: 20px;
+            background: rgba(0, 255, 255, 0.05);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            box-shadow: 0 20px 60px rgba(0, 255, 255, 0.2);
+        }
+        
+        .animated-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: zoomPan 10s infinite ease-in-out;
+            position: relative;
+        }
+        
+        @keyframes zoomPan {
+            0% { transform: scale(1) translate(0, 0); }
+            25% { transform: scale(1.1) translate(-2%, -2%); }
+            50% { transform: scale(1.2) translate(2%, 2%); }
+            75% { transform: scale(1.1) translate(-2%, 2%); }
+            100% { transform: scale(1) translate(0, 0); }
+        }
+        
+        footer {
+            margin-top: 80px;
+            padding: 40px 20px 20px;
+            text-align: center;
+            background: rgba(0, 255, 255, 0.03);
+            border-top: 1px solid rgba(0, 255, 255, 0.1);
+        }
+        
+        .footer-main {
+            font-size: 24px;
+            color: #00ffff;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .footer-credit {
+            font-size: 14px;
+            color: #808080;
+        }
+        
+        .footer-credit a {
+            color: #ff8c00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-credit a:hover { color: #00ffff; }
+        
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .hamburger { display: flex; }
+            
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 250px;
+                height: 100vh;
+                background: rgba(20, 20, 20, 0.95);
+                backdrop-filter: blur(25px);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+                border-left: 1px solid rgba(0, 255, 255, 0.2);
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 40px 30px;
+            }
+            .contact-content h1 { font-size: 42px; }
+            .image-container { height: 400px; }
+        }
+        
+        @media (max-width: 640px) {
+            nav { padding: 10px 20px; }
+            .logo-img { height: 40px; }
+            .contact-content h1 { font-size: 32px; }
+            .contact-info li { font-size: 16px; }
+            .contact-btn { font-size: 16px; padding: 16px 25px; }
+            .image-container { height: 300px; }
+            .contact-container { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-content">
+                <a href="https://hypest.co.bw" class="logo">
+                    <img src="hypestlogo.png" alt="Hypest Logo" class="logo-img">
+                </a>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="https://hypest.co.bw">Home</a></li>
+                    <li><a href="https://hypest.co.bw#services">Services</a></li>
+                    <li><a href="https://hypest.co.bw#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="contact-container">
+            <div class="contact-content">
+                <div>
+                    <h1>Get In Touch</h1>
+                    <ul class="contact-info">
+                        <li>We're here to answer your questions and provide expert healthcare guidance</li>
+                        <li>Our dedicated team is ready to assist you with all your health needs</li>
+                        <li>Reach out through your preferred communication channel</li>
+                        <li>Fast response times and professional consultation services</li>
+                        <li>Available for appointments, inquiries, and emergency support</li>
+                    </ul>
+                </div>
+                
+                <div class="contact-buttons">
+                    <a href="tel:+2676801430" class="contact-btn">
+                        <span class="btn-icon">📞</span>
+                        <span>Call: +267 680 1430</span>
+                    </a>
+                    
+                    <a href="https://wa.me/26773867286" class="contact-btn whatsapp" target="_blank">
+                        <span class="btn-icon">💬</span>
+                        <span>WhatsApp: +267 738 67286</span>
+                    </a>
+                    
+                    <a href="mailto:info@hypest.co.bw" class="contact-btn email">
+                        <span class="btn-icon">✉️</span>
+                        <span>info@hypest.co.bw</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <img src="hypestmap.png" alt="Hypest Map" class="animated-image">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-main">Hypest Botswana - Your Health Our Priority</div>
+        <div class="footer-credit">
+            Developed by <a href="https://lalowebagency.biz" target="_blank">lalowebagency.biz</a> • Copyright © 2026
+        </div>
+    </footer>
+
+    <script> 
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            // Toggle active class on hamburger and menu
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
